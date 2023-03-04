@@ -89,6 +89,7 @@ class _AllProductScreenState extends State<AllProductScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset('assets/images/ic_empty.png',
+                        package: 'flutter_ecommerce_app',
                         width: 100, color: Colors.grey.shade400),
                     const SizedBox(height: 10),
                     Text('Không có dữ liệu'),

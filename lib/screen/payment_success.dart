@@ -17,6 +17,7 @@ class PaymentSuccess extends StatelessWidget {
           children: <Widget>[
             Image.asset(
               'assets/images/checkout_success.png',
+              package: 'flutter_ecommerce_app',
               width: 150,
             ),
             Padding(

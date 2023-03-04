@@ -39,7 +39,7 @@ class _CartPageState extends State<CartPage> {
                 if (_products.isEmpty) return     Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/images/ic_empty.png',width: 100,color: Colors.grey.shade400),
+                    Image.asset('assets/images/ic_empty.png',width: 100,color: Colors.grey.shade400,package: 'flutter_ecommerce_app',),
                     const SizedBox(height: 10),
                     Text('Không có dữ liệu'),
 

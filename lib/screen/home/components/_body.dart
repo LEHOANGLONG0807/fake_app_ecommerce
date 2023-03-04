@@ -67,7 +67,8 @@ Widget detailBody(BuildContext context) {
 }
 
 const banner = [
-  'https://induongquang.com/data/upload/banner-noi-that.jpg',
   'https://sudospaces.com/phedecor-com/2021/11/banner-1.jpg',
+  'https://noithattoandien.vn/wp-content/uploads/2017/10/BANNER-SOFA-YT-300x159.jpg',
+
   'https://media.licdn.com/dms/image/C5112AQEuBbMyZPTueA/article-cover_image-shrink_720_1280/0/1520193021149?e=2147483647&v=beta&t=UzWwiJhDMKv-QwWbhynhEv14t8FEGiECes7mwbk2jK0'
 ];

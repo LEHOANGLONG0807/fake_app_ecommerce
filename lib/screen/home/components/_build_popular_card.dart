@@ -5,9 +5,7 @@ import 'package:get/instance_manager.dart';
 import 'package:get/get.dart';
 
 buildPopularCard(Product product) {
-  return Padding(
-      padding: EdgeInsets.all(2),
-      child: _productCard(product));
+  return Padding(padding: EdgeInsets.all(2), child: _productCard(product));
 }
 
 Card _productCard(Product product) {
@@ -45,6 +43,7 @@ Container _imageIcon(Product product) {
     padding: EdgeInsets.all(20),
     child: Image.asset(
       product.image,
+      package: 'flutter_ecommerce_app',
       fit: BoxFit.cover,
       height: 80,
       width: 80,
