@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Row section(title, VoidCallback onSeeMore) {
+Row section(title, VoidCallback onSeeMore,{bool isSeeMore=true}) {
   return Row(
     children: [
       Text(
@@ -8,7 +8,7 @@ Row section(title, VoidCallback onSeeMore) {
         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
       Spacer(),
-      InkWell(
+    if(isSeeMore)  InkWell(
         onTap: onSeeMore,
         child: Icon(Icons.arrow_forward),
       )

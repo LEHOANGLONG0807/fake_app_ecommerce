@@ -1,3 +1,4 @@
+import 'package:charts_flutter/flutter.dart' as chart;
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/helper/_utils.dart';
 import 'package:get/get.dart';
@@ -55,6 +56,17 @@ class _ProductDetailState extends State<ProductDetail> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    if (widget.product.sale != null)
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                        color: Colors.red,
+                        child: Text(
+                          'Giảm ${widget.product.sale}%  ',
+                          style: Get.textTheme.bodyText2
+                              .copyWith(fontWeight: FontWeight.w500, color: Colors.white),
+                        ),
+                      ),
+                    SizedBox(height: kSpace),
                     Text(
                       "${widget.product.title}",
                       style: TextStyle(
@@ -64,6 +76,15 @@ class _ProductDetailState extends State<ProductDetail> {
                       ),
                     ),
                     SizedBox(height: kSpace),
+                    if (widget.product.sale != null)
+                      Text(
+                        '${(widget.product.price * (100 + widget.product.sale) / 100).formatCurrencyNoName}',
+                        style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.grey,
+                            decoration: TextDecoration.lineThrough),
+                      ),
                     Text(
                       "${widget.product.price.formatCurrencyNoName}",
                       style: TextStyle(
@@ -90,6 +111,32 @@ class _ProductDetailState extends State<ProductDetail> {
                       style: TextStyle(fontSize: 16.0, color: Colors.black),
                       maxLines: 5,
                     ),
+                    const Divider(),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            "Biểu đồ giá",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "(  Đơn vị : Triệu VNĐ / tháng )",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    _buildChart(),
                     const Divider(),
                     SizedBox(height: 20),
                     Text(
@@ -168,6 +215,27 @@ class _ProductDetailState extends State<ProductDetail> {
             }),
           SizedBox(height: 30),
         ],
+      ),
+    );
+  }
+
+  Widget _buildChart() {
+    List<chart.Series<ProductPriceSeries, String>> series = [
+      chart.Series(
+        id: "Price",
+        data: widget.product.getPriceSeries,
+        domainFn: (ProductPriceSeries series, _) => series.month,
+        measureFn: (ProductPriceSeries series, _) => series.price / 1000000,
+        colorFn: (ProductPriceSeries series, _) =>
+            chart.ColorUtil.fromDartColor(Get.theme.primaryColor),
+      ),
+    ];
+    return SizedBox(
+      height: 300,
+      width: 400,
+      child: chart.BarChart(
+        series,
+        animate: true,
       ),
     );
   }

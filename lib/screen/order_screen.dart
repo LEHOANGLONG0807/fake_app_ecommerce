@@ -41,13 +41,18 @@ class _OrderPageState extends State<OrderPage> {
         padding: const EdgeInsets.all(10.0),
         child: Obx(() {
           if (_orders.isEmpty)
-            return     Column(
+            return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/images/ic_empty.png',width: 100,color: Colors.grey.shade400,package: 'flutter_ecommerce_app',),
+                Row(),
+                Image.asset(
+                  'assets/images/ic_empty.png',
+                  width: 100,
+                  color: Colors.grey.shade400,
+                  package: 'flutter_ecommerce_app',
+                ),
                 const SizedBox(height: 10),
                 Text('Không có dữ liệu'),
-
               ],
             );
           return ListView.builder(
@@ -183,11 +188,12 @@ class _ItemOrderState extends State<ItemOrder> {
     );
   }
 
-  Row _viewTotalPrice() {
+  Widget _viewTotalPrice() {
     num total = 0;
     widget.product.products.forEach((element) {
       total += element.product.price * element.quantity;
     });
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

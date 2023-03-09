@@ -240,6 +240,7 @@ class Res {
           info: "D2000- R1800- C970\nChân Aluminium bóng ,Khung gỗ +mdf veneer tần bì",
           price: 73800000,
           tag: "giuong",
+          sale: 20,
           title: "Giường ngủ gỗ Dixie 1m8"),
     );
     productList.add(
@@ -254,6 +255,7 @@ class Res {
           info: "D2000 - R1600 - C1050 mm\nGỗ - MDF veneer Ash, chân kim loại",
           price: 23000000,
           tag: "giuong",
+          sale: 20,
           title: "Giường Cabo 1m6 PMA940026"),
     );
     productList.add(
@@ -277,6 +279,7 @@ class Res {
           ],
           info: "D1600 - R600 - C2000 mm\nThùng MFC chống ẩm - mặt MDF Acrylic Parc50",
           price: 32900000,
+          sale: 20,
           tag: "tu",
           title: "Tủ áo Acrylic"),
     );
@@ -289,6 +292,7 @@ class Res {
           ],
           info: "D1600-R600-C2000mm\nMFC chống ẩm -phụ kiện Hafele",
           price: 20900000,
+          sale: 35,
           tag: "tu",
           title: "Tủ áo hiện đại"),
     );
@@ -303,6 +307,7 @@ class Res {
           ],
           info: "D980 - R630 - C1980\nGỗ sồi+ tràm, MDF sơn trắng",
           price: 12600000,
+          sale: 35,
           tag: "tu",
           title: "Tủ áo Harmony"),
     );
@@ -314,6 +319,7 @@ class Res {
             'https://nhaxinh.com/wp-content/uploads/2021/10/3_91000_1-600x401.jpg',
             'https://nhaxinh.com/wp-content/uploads/2021/10/3_91000_2-600x401.jpg',
           ],
+          sale: 35,
           info:
               "D1200 - R600 - C2100mm\nKhung gỗ Okumi, MDF veneer recon Walnut, chân inox mạ PVD màu gold",
           price: 19900000,
@@ -339,6 +345,7 @@ class Res {
           ],
           info: "Khung kim loại",
           price: 7400000,
+          sale: 20,
           tag: "den",
           title: "Đèn bàn Osiris màu Gold"),
     );
@@ -442,6 +449,158 @@ class Res {
     return productList;
   }
 
+  static List<Product> productsSale() {
+    List<Product> productList = [];
+    productList.add(new Product(
+        description:
+            '''Sofa 3 chỗ từ bộ sưu tập Osaka mang nét hiện đại và thơ mộng của Nhật Bản, tạo nên một không gian sống độc đáo đầy sang trọng. Sản phẩm có phần chân bằng inox màu gold chắc chắn, phần nệm được bọc vải và có thể tháo rời được. Sofa 3 chỗ Osaka mẫu 1 vải 29 không chỉ mang đến thiết kế tinh tế, sang trọng mà còn cho người ngồi cảm giác thoải mái, dễ chịu.''',
+        images: [
+          'https://nhaxinh.com/wp-content/uploads/2022/04/sofa-goc-phai-combo-vai-mb-2041-1-600x400.jpg',
+          'https://nhaxinh.com/wp-content/uploads/2022/04/SOFA-GOC-PHAI-COMBO-VAI-MB-2041-1-3105925-6-600x400.jpg',
+          'https://nhaxinh.com/wp-content/uploads/2022/04/SOFA-GOC-PHAI-COMBO-VAI-MB-2041-1-3105925-7-1-600x400.jpg',
+        ],
+        info: "D2060 - R750 - C820/400 mm\nChân Inox màu gold, tay gỗ, bọc vải, nệm ngồi tháo rời",
+        price: 28900000,
+        tag: "sofa",
+        sale: 20,
+        title: 'Sofa 3 chỗ Osaka mẫu 1 vải 29'));
+    productList.add(
+      Product(
+          description: '',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2023/01/BO-2-TRANH-FRAME-BIRDS-2AS-60X90-158961C-1-600x400.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2023/01/BO-2-TRANH-FRAME-BIRDS-2AS-60X90-158961C-2-600x400.jpg',
+          ],
+          info: "D600 - C800 mm\nKhung gỗ, vải Canvas",
+          price: 5900000,
+          tag: "tranh",
+          sale: 30,
+          title: "Tranh Leav Rose mẫu 2"),
+    );
+    productList.add(
+      Product(
+          description:
+              'Bàn ăn nhập khẩu Suri đến từ Pháp có thiết kế độc đáo với mặt bàn được ghép nối từ những thanh gỗ tự nhiên. Đây sẽ là lựa chọn đặc biệt phù hợp với những không gian phòng ăn mang phong cách retro, cổ điển.',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2021/10/nha-xinh-ban-an-suri-1000-600x400.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2021/10/nha-xinh-ban-an-suri-nghieng-500.jpg',
+          ],
+          info: "D1600-R780-C760 mm\nChân kim loại, gỗ ghép",
+          price: 13750000,
+          tag: "table",
+          sale: 30,
+          title: "Bàn ăn Suri"),
+    );
+    productList.add(
+      Product(
+          description: '',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2021/10/giuong_iris_1m6_stone3.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2021/10/phong-ngu-giuong-hoc-keo-iris-4-600x400.jpg',
+          ],
+          info: "D2000- R1600- C1112 mm\nKhung gỗ MFC, bọc vải - 4 hộc kéo",
+          price: 14900000,
+          tag: "giuong",
+          sale: 20,
+          title: "Giường Hộc Kéo Iris 1M6 Vải Belfast 41"),
+    );
+    productList.add(
+      Product(
+          description:
+              'Thêm điểm nhấn về kết cấu cho mặt bàn của bạn với Đèn bàn Savona tinh xảo, có đế đèn bằng sứ trắng có chạm khắc hình xoắn ốc. Vẻ ngoài đặc biệt của nó được thể hiện bởi đế đèn hoàn thiện bằng đồng cổ và một chao đèn màu kem đơn giản.',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2023/01/DEN-TRAN-MELT-D50-COPPER-MES03CO-LED-TD-600x400.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2023/01/DEN-TRAN-MELT-D50-COPPER-MES03CO-LED-TD-3-600x400.jpg',
+          ],
+          info: "D260 - R580 - C660 mm\nThân gốm-chụp vải",
+          price: 19670000,
+          tag: "den",
+          sale: 30,
+          title: "Đèn bàn Savona"),
+    );
+    productList.add(
+      Product(
+          description: '',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2022/08/KHUNG-HINH-COFFEE-SHOP-70X90-201723I-600x387.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2022/08/KHUNG-HINH-COFFEE-SHOP-70X90-201723I-1-600x387.jpg',
+          ],
+          info: "D600 - R40 - C900 mm\nGỗ công nghiệp, kính",
+          price: 41900000,
+          tag: "tranh",
+          sale: 20,
+          title: "Tranh ABS kính trắng / đen mẫu 2 18610J"),
+    );
+
+    productList.add(new Product(
+        description:
+            '''Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandinavian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này.''',
+        images: [
+          'https://nhaxinh.com/wp-content/uploads/2022/08/ghe-bench-gallet-122cm-h122x46x43-37245p-6-600x387.jpg',
+          'https://nhaxinh.com/wp-content/uploads/2022/08/ghe-bench-gallet-122cm-h122x46x43-37245p-1-1-600x400.jpg',
+        ],
+        info: "D2400 - R880 - C850\nChân kim loại sơn, nệm bọc da tự nhiên, nệm ngồi & lưng rời",
+        price: 61860000,
+        tag: "sofa",
+        sale: 20,
+        title: "Sofa 3 chỗ PENNY da cognac 509MB"));
+    productList.add(new Product(
+        description:
+            '''Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandinavian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này.''',
+        images: [
+          'https://nhaxinh.com/wp-content/uploads/2021/10/102648-sofa-penny-3-cho-vai-xanh-xam2-600x400.jpg'
+        ],
+        info: "D2400 - R880 - C850\nChân kim loại sơn, nệm bọc vải xanh MB 08",
+        price: 26900000,
+        tag: "sofa",
+        sale: 30,
+        title: "Sofa 3 chỗ PENNY vải xanh MB 08"));
+    productList.add(
+      Product(
+          description:
+              'Bàn console kết hợp từ chân inox mạ màu gold và mặt đá vân với điểm nhấn là phần khung với thiết kế uốn cong đầy tính nghệ thuật. Sản phẩm phù hợp cho không gian khòng khách, lối đi hoặc phòng ngủ với phong cách sang trọng, hiện đại.',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2021/10/ban-an-may-1m8.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_may_1m8-600x400.jpg',
+          ],
+          info: "D1200 -R400-C820 mm\nChân inox mạ màu gold, mặt đá vân",
+          price: 16600000,
+          tag: "table",
+          sale: 20,
+          title: "Bàn console Paradise"),
+    );
+    productList.add(
+      Product(
+          description:
+              'Giường ngủ gỗ Dixie 1m8 được nhập khẩu từ thương hiệu nổi tiếng Calligaris của Ý, với thiết kế độc đáo, sang trọng, chân inox hiện đại, màu sắc trung tính cho không gian phòng ngủ thêm tinh tế hiện đại.',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2022/10/Giuong-Moon-1m6-mau-xanh-KD1097-23-2-600x387.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2022/10/Giuong-Moon-mau-xanh-KD1097-23-1-2-600x400.jpg',
+          ],
+          info: "D2000- R1800- C970\nChân Aluminium bóng ,Khung gỗ +mdf veneer tần bì",
+          price: 73800000,
+          sale: 20,
+          tag: "giuong",
+          title: "Giường ngủ gỗ Dixie 1m8"),
+    );
+    productList.add(
+      Product(
+          description:
+              'Mẫu tủ áo hiện đại của Nhà Xinh với thiết kế giản đơn, tối đa tiện ích bằng nhiều ngăn kéo và khoảng trống để cất trữ quần áo và đồ đạc.',
+          images: [
+            'https://nhaxinh.com/wp-content/uploads/2021/10/500-70503-nha-xinh-phong-khach-tu-trung-bay_zd.jpg',
+            'https://nhaxinh.com/wp-content/uploads/2021/10/500-70503-nha-xinh-phong-khach-tu-trung-bay_zd2.jpg',
+          ],
+          sale: 20,
+          info: "D1600-R600-C2000mm\nMFC chống ẩm -phụ kiện Hafele",
+          price: 20900000,
+          tag: "tu",
+          title: "Tủ áo hiện đại"),
+    );
+
+    return productList;
+  }
+
   static List<Product> fetchCategories() {
     List<Product> productList = [];
     productList.add(
@@ -464,24 +623,71 @@ class Res {
     return productList;
   }
 
-  static List<PayCard> getPaymentTypes() {
-    List<PayCard> cards = [];
-    cards.add(new PayCard(
-        title: "Net Banking",
-        description: "Pay bill using card",
-        image: "assets/images/paycard.png"));
-    cards.add(new PayCard(
-        title: "Credit Card",
-        description: "Pay bill using card",
-        image: "assets/images/paycard.png"));
-    cards.add(new PayCard(
-        title: "Debit Card",
-        description: "Pay bill using card",
-        image: "assets/images/paycard.png"));
-    cards.add(new PayCard(
-        title: "Wallet pay",
-        description: "Pay bill using card",
-        image: "assets/images/paycard.png"));
-    return cards;
+  static List<VoucherModel> getVoucher() {
+    List<VoucherModel> voucher = [];
+    voucher.add(
+      VoucherModel(
+          id: "1",
+          hsd: "31/05/2023",
+          code: 'KMAI10',
+          name: 'Giảm 10% khi mua 3 sản phẩm',
+          type: "percent",
+          desc:
+              'Giảm giá 10% cho đơn hàng từ 3 sản phẩm\n\nÁp dụng cho tất cả sản phẩm\n\nĐể biết thêm chi tiết vui lòng liên hệ 0986562117',
+          amount: 0.1,
+          apply: (List<ProductInCart> product) {
+            if (product.length >= 3) {
+              num total = 0;
+              product.forEach((element) {
+                total += element.product.price * element.quantity;
+              });
+              return total * 0.1;
+            }
+            return null;
+          }),
+    );
+    voucher.add(
+      VoucherModel(
+          id: "2",
+          hsd: "30/04/2023",
+          name: 'Giảm 2 triệu cho đơn 30 triệu ',
+          type: "money",
+          code: 'GIAMGIA2',
+          desc:
+              'Giảm giá 2.000.000 VNĐ cho đơn hàng từ 30.000.000 VNĐ\n\nÁp dụng cho tất cả sản phẩm\n\nĐể biết thêm chi tiết vui lòng liên hệ 0986562117',
+          amount: 2000000,
+          apply: (List<ProductInCart> product) {
+            num total = 0;
+            product.forEach((element) {
+              total += element.product.price * element.quantity;
+            });
+            if (total >= 30000000) {
+              return 2000000;
+            }
+            return null;
+          }),
+    );
+    voucher.add(
+      VoucherModel(
+          id: "3",
+          hsd: "20/05/2023",
+          name: 'Giảm 1 triệu cho đơn 20 triệu ',
+          type: "money",
+          code: 'GIAMGIA1',
+          desc:
+              'Giảm giá 1.000.000 VNĐ cho đơn hàng từ 20.000.000 VNĐ\n\nÁp dụng cho tất cả sản phẩm\n\nĐể biết thêm chi tiết vui lòng liên hệ 0986562117',
+          amount: 1000000,
+          apply: (List<ProductInCart> product) {
+            num total = 0;
+            product.forEach((element) {
+              total += element.product.price * element.quantity;
+            });
+            if (total >= 20000000) {
+              return 1000000;
+            }
+            return null;
+          }),
+    );
+    return voucher;
   }
 }

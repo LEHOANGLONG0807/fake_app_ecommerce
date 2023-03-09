@@ -16,33 +16,43 @@ class _ShowImagesState extends State<ShowImages> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: [
-        Container(
-          height: 250,
-          width: double.infinity,
-          color: widget.product.color,
-          child: PageView(
-            children: widget.product.images
-                .map(
-                  (e) => Image.network(
-                    e,
-                    alignment: Alignment.centerRight,
-                    width: double.infinity,
-                    height: 250,
-                    fit: BoxFit.cover,
-                  ),
-                )
-                .toList(),
-            onPageChanged: (index){
-              setState(() {
-                _index=index;
-              });
-            },
-          ),
+        Column(
+          children: [
+            Container(
+              height: 250,
+              width: double.infinity,
+              color: widget.product.color,
+              child: PageView(
+                children: widget.product.images
+                    .map(
+                      (e) => Image.network(
+                        e,
+                        alignment: Alignment.centerRight,
+                        width: double.infinity,
+                        height: 250,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                    .toList(),
+                onPageChanged: (index) {
+                  setState(() {
+                    _index = index;
+                  });
+                },
+              ),
+            ),
+            const SizedBox(height: 10),
+            _buildRowIndicator(),
+          ],
         ),
-        const SizedBox(height: 10),
-        _buildRowIndicator(),
+        if (widget.product.sale != null)
+          Image.asset(
+            'assets/images/ic_sale.png',
+            width: 50,
+            package: 'flutter_ecommerce_app',
+          ).paddingOnly(left: 50),
       ],
     );
   }

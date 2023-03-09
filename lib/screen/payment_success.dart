@@ -31,7 +31,7 @@ class PaymentSuccess extends StatelessWidget {
             Padding(
                 padding: EdgeInsets.all(20),
                 child: Text(
-                  'Đơn đặt hàng của bạn sẽ được giao sớm. Cảm ơn bạn đã chọn ứng dụng của chúng tôi!',
+                  'Đơn đăthn hàng của bạn sẽ được xử lý sớm. Cảm ơn bạn đã chọn ứng dụng của chúng tôi!',
                   style: _theme.textTheme.headline6.copyWith(fontWeight: FontWeight.normal),
                   textAlign: TextAlign.center,
                 )),
