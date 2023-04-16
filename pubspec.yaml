@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   get: any
   cupertino_icons: ^1.0.0
-  google_fonts: ^1.1.0
+  google_fonts: any
   font_awesome_flutter: any
   carousel_slider: any
   intl: any

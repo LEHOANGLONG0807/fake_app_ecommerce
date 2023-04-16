@@ -70,10 +70,10 @@ class _AllProductScreenState extends State<AllProductScreen> {
             if (val.trim().isEmpty) {
               _products.addAll(widget.products);
             } else {
-              final key = Slugify(val.trim(), delimiter: '', lowercase: true).toString();
+              final key = slugify(val.trim(), delimiter: '', lowercase: true).toString();
               widget.products.forEach((element) {
                 final name =
-                    Slugify(element.title.trim(), delimiter: '', lowercase: true).toString();
+                    slugify(element.title.trim(), delimiter: '', lowercase: true).toString();
                 if (name.contains(key)) {
                   _products.add(element);
                 }
@@ -89,8 +89,7 @@ class _AllProductScreenState extends State<AllProductScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset('assets/images/ic_empty.png',
-                        package: 'flutter_ecommerce_app',
-                        width: 100, color: Colors.grey.shade400),
+                        package: 'flutter_ecommerce_app', width: 100, color: Colors.grey.shade400),
                     const SizedBox(height: 10),
                     Text('Không có dữ liệu'),
                   ],
